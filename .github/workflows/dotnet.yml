@@ -24,8 +24,6 @@ jobs:
       run: dotnet restore
     - name: Build Debug Binary
       run: dotnet build --configuration Debug --no-restore
-    - name: Build Release Binary
-      run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
 
@@ -34,12 +32,5 @@ jobs:
       with:
         name: build-debug
         path: bin\Debug\net8.0-windows
-        if-no-files-found: warn
-        compression-level: 6 
-    - name: Upload Release Build Artifact
-      uses: actions/upload-artifact@v4.6.0
-      with:
-        name: build-release
-        path: bin\Release\net8.0-windows
         if-no-files-found: warn
         compression-level: 6 
