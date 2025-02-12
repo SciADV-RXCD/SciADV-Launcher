@@ -1,0 +1,9 @@
+{
+    "name": "sciadv-text-reader",
+    "main": "main.pdf",
+    "window": {
+        "width": 1280,
+        "height": 720,
+        "resizable": true
+    }
+}
