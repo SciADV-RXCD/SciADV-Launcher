@@ -22,25 +22,25 @@ namespace SciADV_Launcher
         private void FormCHNConfig_Load(object sender, EventArgs e)
         {
             label2.Hide();
-            if (File.Exists(CHNconfigFilePath))
+            if (File.Exists(Globals.CHNconfigFilePath))
             {
-                jsonConfigRead = File.ReadAllText(CHNconfigFilePath);
-                var jsonConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(jsonConfigRead);
-                textBox1.Text = jsonConfigData.CHNMainGamePath;
-                CHNMainGameCheck = jsonConfigData.CHNMainGamePath;
-                textBox2.Text = jsonConfigData.CHNChaosGatePath;
-                CHNChaosGateCheck = jsonConfigData.CHNChaosGatePath;
+                Globals.jsonCHNConfigRead = File.ReadAllText(Globals.CHNconfigFilePath);
+                var jsonCHNConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(Globals.jsonCHNConfigRead);
+                textBox1.Text = jsonCHNConfigData.CHNMainGamePath;
+                Globals.CHNMainGameCheck = jsonCHNConfigData.CHNMainGamePath;
+                textBox2.Text = jsonCHNConfigData.CHNChaosGatePath;
+                Globals.CHNChaosGateCheck = jsonCHNConfigData.CHNChaosGatePath;
                 //textBox3.Text = jsonConfigData.CHNLoveChuChuPath;
                 //CHNLoveChuChuCheck = jsonConfigData.CHNLoveChuChuPath;
                 //DELETE NEXT LINE WHEN RELEASED
                 textBox3.Text = "NOT AVAILABLE YET!";
-                textBox4.Text = jsonConfigData.CHNChaosChatPath;
-                CHNChaosChatCheck = jsonConfigData.CHNChaosChatPath;
-                if (jsonConfigData.CHNMainGamePath == null)
+                textBox4.Text = jsonCHNConfigData.CHNChaosChatPath;
+                Globals.CHNChaosChatCheck = jsonCHNConfigData.CHNChaosChatPath;
+                if (jsonCHNConfigData.CHNMainGamePath == null)
                 {
                     textBox1.Text = "Game Missing!";
                 }
-                if (jsonConfigData.CHNChaosGatePath == null)
+                if (jsonCHNConfigData.CHNChaosGatePath == null)
                 {
                     textBox2.Text = "Novel Missing!";
                 }
@@ -50,7 +50,7 @@ namespace SciADV_Launcher
                     textBox3.Text = "Game Missing!";
                 }
                 */
-                if (jsonConfigData.CHNChaosChatPath == null)
+                if (jsonCHNConfigData.CHNChaosChatPath == null)
                 {
                     textBox4.Text = "Novel Missing!";
                 }
@@ -66,20 +66,13 @@ namespace SciADV_Launcher
             }
         }
 
-        string CHNconfigFilePath = "Config/CHNConfig.json";
-        string CHNMainGameCheck;
-        string CHNChaosGateCheck;
-        //string CHNLoveChuChuCheck;
-        string CHNChaosChatCheck;
-        string jsonConfigRead;
-        string jsonCHNPaths;
-        string ConsoleOutputPrefix = "[ SciADV Launcher ] ";
+        
 
         public class CHNCompleteConfig
         {
             public string CHNMainGamePath { get; set; }
             public string CHNChaosGatePath { get; set; }
-            //public string CHNLoveChuChuPath { get; set; }
+            public string CHNLoveChuChuPath { get; set; }
             public string CHNChaosChatPath { get; set; }
         }
 
@@ -91,7 +84,7 @@ namespace SciADV_Launcher
                 if (File.Exists($"{CHNMainGame.SelectedPath}\\Game_Steam.exe"))
                 {
                     textBox1.Text = CHNMainGame.SelectedPath;
-                    CHNMainGameCheck = CHNMainGame.SelectedPath;
+                    Globals.CHNMainGameCheck = CHNMainGame.SelectedPath;
                 }
                 else
                 {
@@ -104,15 +97,14 @@ namespace SciADV_Launcher
         {
             var CHNPaths = new CHNCompleteConfig
             {
-                
-                CHNMainGamePath = CHNMainGameCheck,
-                CHNChaosGatePath = CHNChaosGateCheck,
-                //CHNLoveChuChuPath = CHNLoveChuChuCheck,
-                CHNChaosChatPath = CHNChaosChatCheck
+                CHNMainGamePath = Globals.CHNMainGameCheck,
+                CHNChaosGatePath = Globals.CHNChaosGateCheck,
+                //CHNLoveChuChuPath = Globals.CHNLoveChuChuCheck,
+                CHNChaosChatPath = Globals.CHNChaosChatCheck
             };
-            jsonCHNPaths = JsonSerializer.Serialize(CHNPaths);
+            Globals.jsonCHNPaths = JsonSerializer.Serialize(CHNPaths);
 
-            File.WriteAllText(CHNconfigFilePath, jsonCHNPaths);
+            File.WriteAllText(Globals.CHNconfigFilePath, Globals.jsonCHNPaths);
             if (label2.Visible == true)
             {
                 label2.Hide();
@@ -123,7 +115,7 @@ namespace SciADV_Launcher
             {
                 label2.Show();
             }
-            Console.WriteLine(ConsoleOutputPrefix + "CHN Config Saved!");
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "CHN Config Saved!");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -137,7 +129,7 @@ namespace SciADV_Launcher
             if (CHNChaosGate.ShowDialog() == DialogResult.OK)
             {
                 textBox2.Text = CHNChaosGate.FileName;
-                CHNChaosGateCheck = CHNChaosGate.FileName;
+                Globals.CHNChaosGateCheck = CHNChaosGate.FileName;
             }
         }
 
@@ -169,7 +161,7 @@ namespace SciADV_Launcher
             if (CHNChaosChat.ShowDialog() == DialogResult.OK)
             {
                 textBox4.Text = CHNChaosChat.FileName;
-                CHNChaosChatCheck = CHNChaosChat.FileName;
+                Globals.CHNChaosChatCheck = CHNChaosChat.FileName;
             }
         }
     }

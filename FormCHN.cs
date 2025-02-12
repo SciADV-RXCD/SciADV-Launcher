@@ -23,26 +23,16 @@ namespace SciADV_Launcher
             InitializeComponent();
         }
 
-        string CHNconfigFilePath = "Config/CHNConfig.json";
-        string TextReaderTool = "Tools\\TextReader\\nw.exe";
-        string TextReaderPath = "Tools\\TextReader\\";
-        string jsonConfigRead;
-        string CHNGamePath;
-        string CHNChaosGatePath;
-        //string CHNLoveChuChuPath;
-        string CHNChaosChatPath;
-        string ConsoleOutputPrefix = "[ SciADV Launcher ] ";
-
         private void FormCHN_Load(object sender, EventArgs e)
         {
-            if (File.Exists(CHNconfigFilePath))
+            if (File.Exists(Globals.CHNconfigFilePath))
             {
-                jsonConfigRead = File.ReadAllText(CHNconfigFilePath);
-                var jsonConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(jsonConfigRead);
-                CHNGamePath = jsonConfigData.CHNMainGamePath;
-                CHNChaosGatePath = jsonConfigData.CHNChaosGatePath;
-                //CHNLoveChuChuPath = jsonConfigData.CHNLoveChuChuPath;
-                CHNChaosChatPath = jsonConfigData.CHNChaosChatPath;
+                Globals.jsonCHNConfigRead = File.ReadAllText(Globals.CHNconfigFilePath);
+                var jsonCHNConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(Globals.jsonCHNConfigRead);
+                Globals.CHNMainGameCheck = jsonCHNConfigData.CHNMainGamePath;
+                Globals.CHNChaosGateCheck = jsonCHNConfigData.CHNChaosGatePath;
+                //Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
+                Globals.CHNChaosChatCheck = jsonCHNConfigData.CHNChaosChatPath;
             }
             else
             {
@@ -60,9 +50,9 @@ namespace SciADV_Launcher
         private void button1_Click(object sender, EventArgs e)
         {
             // CHECK IF THE GAME PATH EXIST AND THEN SET THE NEW CURRENT DIRECTORY AND START THE GAME
-            if (CHNGamePath != null)
+            if (Globals.CHNMainGameCheck != null)
             {
-                Directory.SetCurrentDirectory(CHNGamePath);
+                Directory.SetCurrentDirectory(Globals.CHNMainGameCheck);
 
                 // STARTING THE GAME
                 Process CHNGame = new Process
@@ -84,38 +74,38 @@ namespace SciADV_Launcher
         // RELOAD CONFIG BUTTON
         private void button6_Click(object sender, EventArgs e)
         {
-            jsonConfigRead = File.ReadAllText(CHNconfigFilePath);
-            var jsonConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(jsonConfigRead);
-            CHNGamePath = jsonConfigData.CHNMainGamePath;
-            CHNChaosGatePath = jsonConfigData.CHNChaosGatePath;
-            //CHNLoveChuChuPath = jsonConfigData.CHNLoveChuChuPath;
-            CHNChaosChatPath = jsonConfigData.CHNChaosChatPath;
-            Console.WriteLine(ConsoleOutputPrefix + "CHN Config Reloaded!");
+            Globals.jsonCHNConfigRead = File.ReadAllText(Globals.CHNconfigFilePath);
+            var jsonCHNConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(Globals.jsonCHNConfigRead);
+            Globals.CHNMainGameCheck = jsonCHNConfigData.CHNMainGamePath;
+            Globals.CHNChaosGateCheck = jsonCHNConfigData.CHNChaosGatePath;
+            //Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
+            Globals.CHNChaosChatCheck = jsonCHNConfigData.CHNChaosChatPath;
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "CHN Config Reloaded!");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (CHNChaosGatePath == null)
+            if (Globals.CHNChaosGateCheck == null)
             {
                 MessageBox.Show("Chaos;Gate Missing!");
                 return;
             }
 
-            if (File.Exists($"{TextReaderPath}\\main.pdf"))
+            if (File.Exists($"{Globals.TextReaderPath}\\main.pdf"))
             {
-                File.Delete($"{TextReaderPath}\\main.pdf");
-                File.Copy(CHNChaosGatePath, TextReaderPath + "\\main.pdf");
+                File.Delete($"{Globals.TextReaderPath}\\main.pdf");
+                File.Copy(Globals.CHNChaosGateCheck, Globals.TextReaderPath + "\\main.pdf");
             }
             else
             {
-                File.Copy(CHNChaosGatePath, TextReaderPath + "\\main.pdf");
+                File.Copy(Globals.CHNChaosGateCheck, Globals.TextReaderPath + "\\main.pdf");
             }
 
             Process ChaosGateReader = new Process
             {
                 StartInfo =
                 {
-                    FileName = TextReaderTool
+                    FileName = Globals.TextReaderTool
                 }
             };
             ChaosGateReader.Start();
@@ -128,27 +118,27 @@ namespace SciADV_Launcher
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (CHNChaosChatPath == null)
+            if (Globals.CHNChaosChatCheck == null)
             {
                 MessageBox.Show("Chaos;Chat Missing!");
                 return;
             }
 
-            if (File.Exists($"{TextReaderPath}\\main.pdf"))
+            if (File.Exists($"{Globals.TextReaderPath}\\main.pdf"))
             {
-                File.Delete($"{TextReaderPath}\\main.pdf");
-                File.Copy(CHNChaosChatPath, TextReaderPath + "\\main.pdf");
+                File.Delete($"{Globals.TextReaderPath}\\main.pdf");
+                File.Copy(Globals.CHNChaosChatCheck, Globals.TextReaderPath + "\\main.pdf");
             }
             else
             {
-                File.Copy(CHNChaosChatPath, TextReaderPath + "\\main.pdf");
+                File.Copy(Globals.CHNChaosChatCheck, Globals.TextReaderPath + "\\main.pdf");
             }
 
             Process ChaosChatReader = new Process
             {
                 StartInfo =
                 {
-                    FileName = TextReaderTool
+                    FileName = Globals.TextReaderTool
                 }
             };
             ChaosChatReader.Start();

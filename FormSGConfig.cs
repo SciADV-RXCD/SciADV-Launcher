@@ -21,19 +21,19 @@ namespace SciADV_Launcher
         private void FormSGConfig_Load(object sender, EventArgs e)
         {
             label2.Hide();
-            if (File.Exists(SGconfigFilePath))
+            if (File.Exists(Globals.SGconfigFilePath))
             {
-                jsonConfigRead = File.ReadAllText(SGconfigFilePath);
-                var jsonConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(jsonConfigRead);
-                textBox1.Text = jsonConfigData.SGMainGamePath;
-                SGMainGameCheck = jsonConfigData.SGMainGamePath;
-                textBox2.Text = jsonConfigData.SGHolyDayCalamitousBirthPath;
-                SGHolyDayCalamitousBirthCheck = jsonConfigData.SGHolyDayCalamitousBirthPath;
-                if (jsonConfigData.SGMainGamePath == null)
+                Globals.jsonSGConfigRead = File.ReadAllText(Globals.SGconfigFilePath);
+                var jsonSGConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(Globals.jsonSGConfigRead);
+                textBox1.Text = jsonSGConfigData.SGMainGamePath;
+                Globals.SGMainGameCheck = jsonSGConfigData.SGMainGamePath;
+                textBox2.Text = jsonSGConfigData.SGHolyDayCalamitousBirthPath;
+                Globals.SGHolyDayCalamitousBirthCheck = jsonSGConfigData.SGHolyDayCalamitousBirthPath;
+                if (jsonSGConfigData.SGMainGamePath == null)
                 {
                     textBox1.Text = "Game Missing!";
                 }
-                if(jsonConfigData.SGHolyDayCalamitousBirthPath == null)
+                if (jsonSGConfigData.SGHolyDayCalamitousBirthPath == null)
                 {
                     textBox2.Text = "Novel Missing!";
                 }
@@ -44,13 +44,6 @@ namespace SciADV_Launcher
                 textBox2.Text = "Novel Missing!";
             }
         }
-
-        string SGconfigFilePath = "Config/SGConfig.json";
-        string SGMainGameCheck;
-        string SGHolyDayCalamitousBirthCheck;
-        string jsonConfigRead;
-        string jsonSGPaths;
-        string ConsoleOutputPrefix = "[ SciADV Launcher ] ";
 
         public class SGCompleteConfig
         {
@@ -77,12 +70,12 @@ namespace SciADV_Launcher
         {
             var SGPaths = new SGCompleteConfig
             {
-                SGMainGamePath = SGMainGameCheck,
-                SGHolyDayCalamitousBirthPath = SGHolyDayCalamitousBirthCheck
+                SGMainGamePath = Globals.SGMainGameCheck,
+                SGHolyDayCalamitousBirthPath = Globals.SGHolyDayCalamitousBirthCheck
             };
-            jsonSGPaths = JsonSerializer.Serialize(SGPaths);
+            Globals.jsonSGPaths = JsonSerializer.Serialize(SGPaths);
 
-            File.WriteAllText(SGconfigFilePath, jsonSGPaths);
+            File.WriteAllText(Globals.SGconfigFilePath, Globals.jsonSGPaths);
             if (label2.Visible == true)
             {
                 label2.Hide();
@@ -93,7 +86,7 @@ namespace SciADV_Launcher
             {
                 label2.Show();
             }
-            Console.WriteLine(ConsoleOutputPrefix + "SG Config Saved!");
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "SG Config Saved!");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,7 +97,7 @@ namespace SciADV_Launcher
                 if (File.Exists($"{SGMainGame.SelectedPath}\\LauncherC0.exe"))
                 {
                     textBox1.Text = SGMainGame.SelectedPath;
-                    SGMainGameCheck = SGMainGame.SelectedPath;
+                    Globals.SGMainGameCheck = SGMainGame.SelectedPath;
                 }
                 else
                 {
@@ -124,8 +117,13 @@ namespace SciADV_Launcher
             if (SGHolyDayCalamitousBirth.ShowDialog() == DialogResult.OK)
             {
                 textBox2.Text = SGHolyDayCalamitousBirth.FileName;
-                SGHolyDayCalamitousBirthCheck = SGHolyDayCalamitousBirth.FileName;
+                Globals.SGHolyDayCalamitousBirthCheck = SGHolyDayCalamitousBirth.FileName;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

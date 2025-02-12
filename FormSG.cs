@@ -19,20 +19,13 @@ namespace SciADV_Launcher
             InitializeComponent();
         }
 
-        string SGconfigFilePath = "Config/SGConfig.json";
-        string TextReaderTool = "Tools\\TextReader\\nw.exe";
-        string TextReaderPath = "Tools\\TextReader\\";
-        string jsonConfigRead;
-        string SGGamePath;
-        string ConsoleOutputPrefix = "[ SciADV Launcher ] ";
-
         private void FormSG_Load(object sender, EventArgs e)
         {
-            if (File.Exists(SGconfigFilePath))
+            if (File.Exists(Globals.SGconfigFilePath))
             {
-                jsonConfigRead = File.ReadAllText(SGconfigFilePath);
-                var jsonConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(jsonConfigRead);
-                SGGamePath = jsonConfigData.SGMainGamePath;
+                Globals.jsonSGConfigRead = File.ReadAllText(Globals.SGconfigFilePath);
+                var jsonSGConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(Globals.jsonSGConfigRead);
+                Globals.SGMainGameCheck = jsonSGConfigData.SGMainGamePath;
             }
             else
             {
@@ -49,18 +42,18 @@ namespace SciADV_Launcher
 
         private void button3_Click(object sender, EventArgs e)
         {
-            jsonConfigRead = File.ReadAllText(SGconfigFilePath);
-            var jsonConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(jsonConfigRead);
-            SGGamePath = jsonConfigData.SGMainGamePath;
-            Console.WriteLine(ConsoleOutputPrefix + "SG Config Reloaded!");
+            Globals.jsonSGConfigRead = File.ReadAllText(Globals.SGconfigFilePath);
+            var jsonSGConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(Globals.jsonSGConfigRead);
+            Globals.SGMainGameCheck = jsonSGConfigData.SGMainGamePath;
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "SG Config Reloaded!");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // CHECK IF THE GAME PATH EXIST AND THEN SET THE NEW CURRENT DIRECTORY AND START THE GAME
-            if (SGGamePath != null)
+            if (Globals.SGMainGameCheck != null)
             {
-                Directory.SetCurrentDirectory(SGGamePath);
+                Directory.SetCurrentDirectory(Globals.SGMainGameCheck);
 
                 // STARTING THE GAME
                 Process SGGame = new Process

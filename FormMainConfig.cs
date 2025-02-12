@@ -62,12 +62,16 @@ namespace SciADV_Launcher
             string destinationTextReaderPath = "Tools\\TextReader\\";
             label2.Text = "Downloading\nText Reader...";
             await Task.Delay(300);
-            DownloadFile("https://dl.nwjs.io/v0.95.0/nwjs-sdk-v0.95.0-win-x64.zip", "TextReader.zip", progressBar1);
+            //Only if Downloading from Official Sources
+            //DownloadFile("https://dl.nwjs.io/v0.95.0/nwjs-sdk-v0.95.0-win-x64.zip", "TextReader.zip", progressBar1);
+            DownloadFile("https://github.com/SciADV-RXCD/SciADV-Launcher/releases/download/0.0.0/TextReader.zip", "TextReader.zip", progressBar1);
             if (File.Exists("TextReader.zip"))
             {
                 ZipFile.ExtractToDirectory("TextReader.zip", destinationTextReaderPath);
                 File.Delete("TextReader.zip");
 
+                //Only if Downloading from Official Sources
+                /*
                 var allFiles = Directory.GetFiles(sourceTextReaderPath);
                 foreach (var file in allFiles)
                 {
@@ -77,8 +81,10 @@ namespace SciADV_Launcher
                 Directory.Move($"{sourceTextReaderPath}\\locales", $"{destinationTextReaderPath}\\locales");
                 Directory.Move($"{sourceTextReaderPath}\\swiftshader", $"{destinationTextReaderPath}\\swiftshader");
                 Directory.Delete(sourceTextReaderPath, true);
+                */
 
-                File.WriteAllBytes("Tools\\TextReader\\package.json", Properties.Resources.packageJson);
+                //Only if Downloading from Official Sources
+                //File.WriteAllBytes("Tools\\TextReader\\package.json", Properties.Resources.packageJson);
 
                 label2.Text = "Text Reader Found!";
                 button1.Enabled = false;
@@ -91,13 +97,16 @@ namespace SciADV_Launcher
         {
             label4.Text = "Downloading\nVideo Player...";
             await Task.Delay(300);
-            DownloadFile("https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-x86_64-windows-msvc.zip", "mpv.zip", progressBar2);
+            //Only if Downloading from Official Sources
+            //DownloadFile("https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-x86_64-windows-msvc.zip", "mpv.zip", progressBar2);
+            DownloadFile("https://github.com/SciADV-RXCD/SciADV-Launcher/releases/download/0.0.0/mpv.zip", "mpv.zip", progressBar2);
             if (File.Exists("mpv.zip"))
             {
                 ZipFile.ExtractToDirectory("mpv.zip", "Tools\\VideoPlayer");
                 File.Delete("mpv.zip");
-                File.Delete("Tools\\VideoPlayer\\mpv.pdb");
-                File.Delete("Tools\\VideoPlayer\\mpv.com");
+                //Only if Downloading from Official Sources
+                //File.Delete("Tools\\VideoPlayer\\mpv.pdb");
+                //File.Delete("Tools\\VideoPlayer\\mpv.com");
                 label4.Text = "Video Player Found!";
                 button2.Enabled = false;
                 progressBar2.Hide();
@@ -109,13 +118,16 @@ namespace SciADV_Launcher
         {
             label6.Text = "Downloading\nLocale Emulator...";
             await Task.Delay(300);
-            DownloadFile("https://github.com/xupefei/Locale-Emulator/releases/download/v2.5.0.1/Locale.Emulator.2.5.0.1.zip", "LocaleEmulator.zip", progressBar3);
+            //Only if Downloading from Official Sources
+            //DownloadFile("https://github.com/xupefei/Locale-Emulator/releases/download/v2.5.0.1/Locale.Emulator.2.5.0.1.zip", "LocaleEmulator.zip", progressBar3);
+            DownloadFile("https://github.com/SciADV-RXCD/SciADV-Launcher/releases/download/0.0.0/LocaleEmulator.zip", "LocaleEmulator.zip", progressBar3);
             if (File.Exists("LocaleEmulator.zip"))
             {
                 ZipFile.ExtractToDirectory("LocaleEmulator.zip", "Tools\\LocaleEmulator");
                 File.Delete("LocaleEmulator.zip");
-                File.WriteAllBytes("Tools\\LocaleEmulator\\LECommonLibrary.dll", Properties.Resources.LECommonLibrary);
-                File.WriteAllBytes("Tools\\LocaleEmulator\\LEConfig.xml", Properties.Resources.LEConfig);
+                //Only if Downloading from Official Sources
+                //File.WriteAllBytes("Tools\\LocaleEmulator\\LECommonLibrary.dll", Properties.Resources.LECommonLibrary);
+                //File.WriteAllBytes("Tools\\LocaleEmulator\\LEConfig.xml", Properties.Resources.LEConfig);
 
                 label6.Text = "Locale Emulator Found!";
                 button3.Enabled = false;

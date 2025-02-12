@@ -9,9 +9,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>SciADVIcon.ico</ApplicationIcon>
     <Authors>RubyX_Coded</Authors>
-    <Version>0.3.0</Version>
-    <AssemblyVersion>0.3.0.0</AssemblyVersion>
-    <FileVersion>0.3.0.0</FileVersion>
+    <Version>0.4.0</Version>
+    <AssemblyVersion>0.4.0.0</AssemblyVersion>
+    <FileVersion>0.4.0.0</FileVersion>
     <PlatformTarget>x64</PlatformTarget>
     <Company>Imperium Nischarum</Company>
   </PropertyGroup>
