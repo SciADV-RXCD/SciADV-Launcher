@@ -67,6 +67,15 @@ namespace SciADV_Launcher
                         SendKeys.SendWait("{ENTER}");
                         Console.Read();
                     }
+                    else
+                    {
+                        Console.WriteLine("################################");
+                        Console.WriteLine("#####   SciADV  Launcher   #####");
+                        Console.WriteLine("#####  DEBUG MODE ENABLED  #####");
+                        Console.WriteLine("################################");
+                        SendKeys.SendWait("{ENTER}");
+                        Console.Read();
+                    }
                 }
             }
 

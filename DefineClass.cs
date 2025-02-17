@@ -21,6 +21,7 @@ namespace SciADV_Launcher
             public static string LocaleEmulatorTool = $"{LauncherAppPath}\\Tools\\LocaleEmulator\\LEProc.exe";
             public static string JapaneseLocaleGUID = "-runas 3d7196a5-2eca-4669-aa05-af20d5b911de ";
             public static string VideoPlayerTool = $"{LauncherAppPath}\\Tools\\VideoPlayer\\mpv.exe";
+            public static string VideoPlayerPath = $"{LauncherAppPath}\\Tools\\VideoPlayer\\";
             public static string ConsoleOutputPrefix = "[ SciADV Launcher ] ";
             // ########## LAUNCHER STRINGS  END  ##########
 
@@ -45,6 +46,8 @@ namespace SciADV_Launcher
             public static string SGconfigFilePath = $"{LauncherAppPath}\\Config\\SGConfig.json";
             public static string jsonSGConfigRead { get; set; }
             public static string jsonSGPaths { get; set; }
+            public static string[] allBabelGrievedMazeDramaCDFiles { get; set; }
+            public static string[] allBabelGrievedMazeMangaFiles { get; set; }
             // SG Content Checks
             public static string SGMainGameCheck { get; set; }
             public static string SGHolyDayCalamitousBirthCheck { get; set; }
@@ -53,7 +56,8 @@ namespace SciADV_Launcher
             public static string SGPosterioriExistenceCheck { get; set; }
             public static string SGVariantSpaceOctetCheck { get; set; }
             public static string SGDarlingsEmbraceCheck { get; set; }
-            public static string SGBabelGrievedMazeCheck { get; set; }
+            public static string SGBabelGrievedMazeDramaCDCheck { get; set; }
+            public static string SGBabelGrievedMazeMangaCheck { get; set; }
             public static string SGArcLightInfinityCheck { get; set; }
             public static string SGHydeDarkDimensionCheck { get; set; }
             public static string SGRebellionMissingRingCheck { get; set; }

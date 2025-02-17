@@ -31,12 +31,12 @@ namespace SciADV_Launcher
                 var jsonCHNConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(Globals.jsonCHNConfigRead);
                 Globals.CHNMainGameCheck = jsonCHNConfigData.CHNMainGamePath;
                 Globals.CHNChaosGateCheck = jsonCHNConfigData.CHNChaosGatePath;
-                //Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
+                Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
                 Globals.CHNChaosChatCheck = jsonCHNConfigData.CHNChaosChatPath;
             }
             else
             {
-                MessageBox.Show("Config Missing! Please Configure the Launcher!");
+                Console.WriteLine(Globals.ConsoleOutputPrefix + "Config Missing! Please Configure the Launcher!");
                 return;
             }
         }
@@ -62,8 +62,10 @@ namespace SciADV_Launcher
                         FileName = "Game_Steam.exe"
                     }
                 };
-
                 CHNGame.Start();
+                Console.WriteLine(Globals.ConsoleOutputPrefix + "CHAOS;HEAD NoAH Launched!");
+                ActiveForm.WindowState = FormWindowState.Minimized;
+                Directory.SetCurrentDirectory(Globals.LauncherAppPath);
             }
             else
             {
@@ -78,7 +80,7 @@ namespace SciADV_Launcher
             var jsonCHNConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(Globals.jsonCHNConfigRead);
             Globals.CHNMainGameCheck = jsonCHNConfigData.CHNMainGamePath;
             Globals.CHNChaosGateCheck = jsonCHNConfigData.CHNChaosGatePath;
-            //Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
+            Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
             Globals.CHNChaosChatCheck = jsonCHNConfigData.CHNChaosChatPath;
             Console.WriteLine(Globals.ConsoleOutputPrefix + "CHN Config Reloaded!");
         }
@@ -109,11 +111,23 @@ namespace SciADV_Launcher
                 }
             };
             ChaosGateReader.Start();
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "CHAOS;GATE Launched!");
+            ActiveForm.WindowState = FormWindowState.Minimized;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Process CHNLoveChuChu = new Process
+            {
+                StartInfo =
+                    {
+                        FileName = Globals.CHNLoveChuChuCheck,
+                        Arguments = "-r PCSG00435"
+                    }
+            };
+            CHNLoveChuChu.Start();
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "CHAOS;HEAD Love Chu☆Chu! Launched!");
+            ActiveForm.WindowState = FormWindowState.Minimized;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -142,6 +156,8 @@ namespace SciADV_Launcher
                 }
             };
             ChaosChatReader.Start();
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "CHAOS;CHAT Launched!");
+            ActiveForm.WindowState = FormWindowState.Minimized;
         }
     }
 }

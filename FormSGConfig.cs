@@ -25,23 +25,190 @@ namespace SciADV_Launcher
             {
                 Globals.jsonSGConfigRead = File.ReadAllText(Globals.SGconfigFilePath);
                 var jsonSGConfigData = JsonSerializer.Deserialize<SGCompleteConfig>(Globals.jsonSGConfigRead);
-                textBox1.Text = jsonSGConfigData.SGMainGamePath;
+
                 Globals.SGMainGameCheck = jsonSGConfigData.SGMainGamePath;
-                textBox2.Text = jsonSGConfigData.SGHolyDayCalamitousBirthPath;
                 Globals.SGHolyDayCalamitousBirthCheck = jsonSGConfigData.SGHolyDayCalamitousBirthPath;
+                Globals.SGEgoisticPoriomaniaCheck = jsonSGConfigData.SGEgoisticPoriomaniaPath;
+                Globals.SGLoadRegionDejaVuCheck = jsonSGConfigData.SGLoadRegionDejaVuPath;
+                Globals.SGLoadRegionDejaVuCheck = jsonSGConfigData.SGPosterioriExistencePath;
+                Globals.SGVariantSpaceOctetCheck = jsonSGConfigData.SGVariantSpaceOctetPath;
+                Globals.SGDarlingsEmbraceCheck = jsonSGConfigData.SGDarlingsEmbracePath;
+                Globals.SGBabelGrievedMazeDramaCDCheck = jsonSGConfigData.SGBabelGrievedMazeDramaCDPath;
+                Globals.SGBabelGrievedMazeMangaCheck = jsonSGConfigData.SGBabelGrievedMazeMangaPath;
+                Globals.SGArcLightInfinityCheck = jsonSGConfigData.SGArcLightInfinityPath;
+                Globals.SGHydeDarkDimensionCheck = jsonSGConfigData.SGHydeDarkDimensionPath;
+                Globals.SGRebellionMissingRingCheck = jsonSGConfigData.SGRebellionMissingRingPath;
+                Globals.SGDistantValhallaCheck = jsonSGConfigData.SGDistantValhallaPath;
+                Globals.SGBraunianMotionLoveHateCheck = jsonSGConfigData.SGBraunianMotionLoveHatePath;
+                Globals.SGSanrioChanceEncounterGoldigPartyCheck = jsonSGConfigData.SGSanrioChanceEncounterGoldigPartyPath;
+                Globals.SGTimeLongAgoCheck = jsonSGConfigData.SGTimeLongAgoPath;
+                Globals.SGEpigraphShortcutCheck = jsonSGConfigData.SGEpigraphShortcutPath;
+                Globals.SGOkabeBirthdaySpecialCheck = jsonSGConfigData.SGOkabeBirthdaySpecialPath;
+
                 if (jsonSGConfigData.SGMainGamePath == null)
                 {
                     textBox1.Text = "Game Missing!";
                 }
+                else
+                {
+                    textBox1.Text = jsonSGConfigData.SGMainGamePath;
+                }
                 if (jsonSGConfigData.SGHolyDayCalamitousBirthPath == null)
                 {
                     textBox2.Text = "Novel Missing!";
+                }
+                else
+                {
+                    textBox2.Text = jsonSGConfigData.SGHolyDayCalamitousBirthPath;
+                }
+                if (jsonSGConfigData.SGEgoisticPoriomaniaPath == null)
+                {
+                    textBox3.Text = "Video Missing!";
+                }
+                else
+                {
+                    textBox3.Text = jsonSGConfigData.SGEgoisticPoriomaniaPath;
+                }
+                if (jsonSGConfigData.SGLoadRegionDejaVuPath == null)
+                {
+                    textBox4.Text = "Video Missing!";
+                }
+                else
+                {
+                    textBox4.Text = jsonSGConfigData.SGLoadRegionDejaVuPath;
+                }
+                if (jsonSGConfigData.SGPosterioriExistencePath == null)
+                {
+                    textBox5.Text = "Drama CD Missing!";
+                }
+                else
+                {
+                    textBox5.Text = jsonSGConfigData.SGPosterioriExistencePath;
+                }
+                if (jsonSGConfigData.SGVariantSpaceOctetPath == null)
+                {
+                    textBox6.Text = "Game Missing!";
+                }
+                else
+                {
+                    textBox6.Text = jsonSGConfigData.SGVariantSpaceOctetPath;
+                }
+                if (jsonSGConfigData.SGDarlingsEmbracePath == null)
+                {
+                    textBox7.Text = "Game Missing!";
+                }
+                else
+                {
+                    textBox7.Text = jsonSGConfigData.SGDarlingsEmbracePath;
+                }
+                if (jsonSGConfigData.SGBabelGrievedMazeDramaCDPath == null)
+                {
+                    textBox8.Text = "Drama CD Missing!";
+                }
+                else
+                {
+                    textBox8.Text = jsonSGConfigData.SGBabelGrievedMazeDramaCDPath;
+                }
+                if (jsonSGConfigData.SGBabelGrievedMazeMangaPath == null)
+                {
+                    textBox18.Text = "Manga Missing!";
+                }
+                else
+                {
+                    textBox18.Text = jsonSGConfigData.SGBabelGrievedMazeMangaPath;
+                }
+                if (jsonSGConfigData.SGArcLightInfinityPath == null)
+                {
+                    textBox9.Text = "Drama CD Missing!";
+                }
+                else
+                {
+                    textBox9.Text = jsonSGConfigData.SGArcLightInfinityPath;
+                }
+                if (jsonSGConfigData.SGHydeDarkDimensionPath == null)
+                {
+                    textBox10.Text = "Drama CD Missing!";
+                }
+                else
+                {
+                    textBox10.Text = jsonSGConfigData.SGHydeDarkDimensionPath;
+                }
+                if (jsonSGConfigData.SGRebellionMissingRingPath == null)
+                {
+                    textBox11.Text = "Manga Missing!";
+                }
+                else
+                {
+                    textBox11.Text = jsonSGConfigData.SGRebellionMissingRingPath;
+                }
+                if (jsonSGConfigData.SGDistantValhallaPath == null)
+                {
+                    textBox12.Text = "Novel Missing!";
+                }
+                else
+                {
+                    textBox12.Text = jsonSGConfigData.SGDistantValhallaPath;
+                }
+                if (jsonSGConfigData.SGBraunianMotionLoveHatePath == null)
+                {
+                    textBox13.Text = "Manga Missing!";
+                }
+                else
+                {
+                    textBox13.Text = jsonSGConfigData.SGBraunianMotionLoveHatePath;
+                }
+                if (jsonSGConfigData.SGSanrioChanceEncounterGoldigPartyPath == null)
+                {
+                    textBox14.Text = "Game Missing!";
+                }
+                else
+                {
+                    textBox14.Text = jsonSGConfigData.SGSanrioChanceEncounterGoldigPartyPath;
+                }
+                if (jsonSGConfigData.SGTimeLongAgoPath == null)
+                {
+                    textBox15.Text = "Manga Missing!";
+                }
+                else
+                {
+                    textBox15.Text = jsonSGConfigData.SGTimeLongAgoPath;
+                }
+                if (jsonSGConfigData.SGEpigraphShortcutPath == null)
+                {
+                    textBox16.Text = "Manga Missing!";
+                }
+                else
+                {
+                    textBox16.Text = jsonSGConfigData.SGEpigraphShortcutPath;
+                }
+                if (jsonSGConfigData.SGOkabeBirthdaySpecialPath == null)
+                {
+                    textBox17.Text = "Novel Missing!";
+                }
+                else
+                {
+                    textBox17.Text = jsonSGConfigData.SGOkabeBirthdaySpecialPath;
                 }
             }
             else
             {
                 textBox1.Text = "Game Missing!";
                 textBox2.Text = "Novel Missing!";
+                textBox3.Text = "Video Missing!";
+                textBox4.Text = "Video Missing!";
+                textBox5.Text = "Drama CD Missing!";
+                textBox6.Text = "Game Missing!";
+                textBox7.Text = "Game Missing!";
+                textBox8.Text = "Manga Missing!";
+                textBox9.Text = "Drama CD Missing!";
+                textBox10.Text = "Drama CD Missing!";
+                textBox11.Text = "Manga Missing!";
+                textBox12.Text = "Novel Missing!";
+                textBox13.Text = "Manga Missing!";
+                textBox14.Text = "Game Missing!";
+                textBox15.Text = "Manga Missing!";
+                textBox16.Text = "Manga Missing!";
+                textBox17.Text = "Novel Missing!";
             }
         }
 
@@ -54,7 +221,8 @@ namespace SciADV_Launcher
             public string SGPosterioriExistencePath { get; set; }
             public string SGVariantSpaceOctetPath { get; set; }
             public string SGDarlingsEmbracePath { get; set; }
-            public string SGBabelGrievedMazePath { get; set; }
+            public string SGBabelGrievedMazeDramaCDPath { get; set; }
+            public string SGBabelGrievedMazeMangaPath { get; set; }
             public string SGArcLightInfinityPath { get; set; }
             public string SGHydeDarkDimensionPath { get; set; }
             public string SGRebellionMissingRingPath { get; set; }
@@ -71,7 +239,23 @@ namespace SciADV_Launcher
             var SGPaths = new SGCompleteConfig
             {
                 SGMainGamePath = Globals.SGMainGameCheck,
-                SGHolyDayCalamitousBirthPath = Globals.SGHolyDayCalamitousBirthCheck
+                SGHolyDayCalamitousBirthPath = Globals.SGHolyDayCalamitousBirthCheck,
+                SGEgoisticPoriomaniaPath = Globals.SGEgoisticPoriomaniaCheck,
+                SGLoadRegionDejaVuPath = Globals.SGLoadRegionDejaVuCheck,
+                SGPosterioriExistencePath = Globals.SGPosterioriExistenceCheck,
+                SGVariantSpaceOctetPath = Globals.SGVariantSpaceOctetCheck,
+                SGDarlingsEmbracePath = Globals.SGDarlingsEmbraceCheck,
+                SGBabelGrievedMazeDramaCDPath = Globals.SGBabelGrievedMazeDramaCDCheck,
+                SGBabelGrievedMazeMangaPath = Globals.SGBabelGrievedMazeMangaCheck,
+                SGArcLightInfinityPath = Globals.SGArcLightInfinityCheck,
+                SGHydeDarkDimensionPath = Globals.SGHydeDarkDimensionCheck,
+                SGRebellionMissingRingPath = Globals.SGRebellionMissingRingCheck,
+                SGDistantValhallaPath = Globals.SGDistantValhallaCheck,
+                SGBraunianMotionLoveHatePath = Globals.SGBraunianMotionLoveHateCheck,
+                SGSanrioChanceEncounterGoldigPartyPath = Globals.SGSanrioChanceEncounterGoldigPartyCheck,
+                SGTimeLongAgoPath = Globals.SGTimeLongAgoCheck,
+                SGEpigraphShortcutPath = Globals.SGEpigraphShortcutCheck,
+                SGOkabeBirthdaySpecialPath = Globals.SGOkabeBirthdaySpecialCheck
             };
             Globals.jsonSGPaths = JsonSerializer.Serialize(SGPaths);
 
@@ -110,7 +294,7 @@ namespace SciADV_Launcher
         {
             OpenFileDialog SGHolyDayCalamitousBirth = new OpenFileDialog
             {
-                Filter = "|HolyDayCalamitousBirthComplete.pdf",
+                Filter = "PDF Files (*.pdf)|*.pdf",
                 FilterIndex = 1,
                 Multiselect = false
             };
@@ -123,7 +307,117 @@ namespace SciADV_Launcher
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Egoistic Poriomania
+            OpenFileDialog SGEgoisticPoriomania = new OpenFileDialog
+            {
+                Filter = "MP4 / MKV Files (*.mkv or *.mp4)|*.mkv;*.mp4",
+                FilterIndex = 1,
+                Multiselect = false
+            };
+            if (SGEgoisticPoriomania.ShowDialog() == DialogResult.OK)
+            {
+                textBox3.Text = SGEgoisticPoriomania.FileName;
+                Globals.SGEgoisticPoriomaniaCheck = SGEgoisticPoriomania.FileName;
+            }
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Load Region of Deja Vu
+            OpenFileDialog SGLoadRegionDejaVu = new OpenFileDialog
+            {
+                Filter = "MP4 / MKV Files (*.mkv or *.mp4)|*.mkv;*.mp4",
+                FilterIndex = 1,
+                Multiselect = false
+            };
+            if (SGLoadRegionDejaVu.ShowDialog() == DialogResult.OK)
+            {
+                textBox4.Text = SGLoadRegionDejaVu.FileName;
+                Globals.SGLoadRegionDejaVuCheck = SGLoadRegionDejaVu.FileName;
+            }
+        }
+
+        // Babel Drama CD Folder
+        private void button9_Click(object sender, EventArgs e)
+        {
+            /*
+            FolderBrowserDialog BabelGrievedMazeFolder = new FolderBrowserDialog();
+            if (BabelGrievedMazeFolder.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
+            */
+            OpenFileDialog BabelGrievedMazeDramaCDFiles = new OpenFileDialog
+            {
+                Filter = "MP4 / MKV Files (*.mkv or *.mp4)|*.mkv;*.mp4",
+                FilterIndex = 1,
+                Multiselect = true
+            };
+            if (BabelGrievedMazeDramaCDFiles.ShowDialog() == DialogResult.OK)
+            {
+                //textBox8.Text = SGLoadRegionDejaVu.FileName;
+                //Globals.SGLoadRegionDejaVuCheck = SGLoadRegionDejaVu.FileName;
+                Globals.allBabelGrievedMazeDramaCDFiles = BabelGrievedMazeDramaCDFiles.FileNames;
+                Globals.SGBabelGrievedMazeDramaCDCheck = Path.GetDirectoryName(Globals.allBabelGrievedMazeDramaCDFiles[0]);
+                if (File.Exists($"{Globals.SGBabelGrievedMazeDramaCDCheck}\\main.m3u"))
+                {
+                    File.Delete($"{Globals.SGBabelGrievedMazeDramaCDCheck}\\main.m3u");
+                    File.WriteAllLines($"{Globals.SGBabelGrievedMazeDramaCDCheck}\\main.m3u", Globals.allBabelGrievedMazeDramaCDFiles);
+                }
+                else
+                {
+                    File.WriteAllLines($"{Globals.SGBabelGrievedMazeDramaCDCheck}\\main.m3u", Globals.allBabelGrievedMazeDramaCDFiles);
+                }
+
+
+                //Console Output
+                //Get Directory of the Files
+                //Path.GetDirectoryName(Globals.allBabelGrievedMazeFiles[0]);
+                //Console.WriteLine(Path.GetDirectoryName(Globals.allBabelGrievedMazeFiles[0]));
+                //Globals.allBabelGrievedMazeFiles.ToList().ForEach(Console.WriteLine);
+                textBox8.Text = Globals.SGBabelGrievedMazeDramaCDCheck;
+            }
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog BabelGrievedMazeMangaFiles = new FolderBrowserDialog();
+            if (BabelGrievedMazeMangaFiles.ShowDialog() == DialogResult.OK)
+            {
+                Globals.SGBabelGrievedMazeMangaCheck = BabelGrievedMazeMangaFiles.SelectedPath;
+                textBox8.Text = Globals.SGBabelGrievedMazeMangaCheck;
+
+                if (File.Exists($"{Globals.SGBabelGrievedMazeMangaCheck}\\main.pdf"))
+                {
+                    File.Delete($"{Globals.SGBabelGrievedMazeMangaCheck}\\main.pdf");
+                }
+
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                using (PdfDocument BabelGrievedMazeMangaCompletePDF = new PdfDocument())
+                {
+                    string[] files = Directory.GetFiles(Globals.SGBabelGrievedMazeMangaCheck);
+                    foreach (string file in files)
+                    {
+                        using (PdfDocument x = PdfReader.Open(file, PdfDocumentOpenMode.Import))
+                        {
+                            for (int i = 0; i < x.PageCount; i++)
+                            {
+                                BabelGrievedMazeMangaCompletePDF.AddPage(x.Pages[i]);
+                            }
+                        }
+                    }
+                    if (File.Exists($"{Globals.SGBabelGrievedMazeMangaCheck}\\main.pdf"))
+                    {
+                        File.Delete($"{Globals.SGBabelGrievedMazeMangaCheck}\\main.pdf");
+                        BabelGrievedMazeMangaCompletePDF.Save($"{Globals.SGBabelGrievedMazeMangaCheck}\\main.pdf");
+                    }
+                    else
+                    {
+                        BabelGrievedMazeMangaCompletePDF.Save($"{Globals.SGBabelGrievedMazeMangaCheck}\\main.pdf");
+                    }
+                }
+
+            }
         }
     }
 }

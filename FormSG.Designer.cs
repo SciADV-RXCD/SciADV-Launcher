@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSG));
             button1 = new Button();
             button2 = new Button();
@@ -49,6 +50,10 @@
             button17 = new Button();
             button18 = new Button();
             button19 = new Button();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            dramaCDFolderToolStripMenuItem = new ToolStripMenuItem();
+            mangaToolStripMenuItem = new ToolStripMenuItem();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -95,12 +100,14 @@
             // 
             // button4
             // 
+            button4.Font = new Font("Segoe UI", 8F);
             button4.Location = new Point(12, 260);
             button4.Name = "button4";
             button4.Size = new Size(182, 28);
             button4.TabIndex = 4;
-            button4.Text = "button4";
+            button4.Text = "Holy Day of the Calamitous Birth";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -108,8 +115,9 @@
             button5.Name = "button5";
             button5.Size = new Size(182, 28);
             button5.TabIndex = 5;
-            button5.Text = "button5";
+            button5.Text = "Egoistic Poriomania";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -117,8 +125,9 @@
             button6.Name = "button6";
             button6.Size = new Size(182, 28);
             button6.TabIndex = 6;
-            button6.Text = "button6";
+            button6.Text = "Load Region of Déjà Vu";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -126,8 +135,9 @@
             button7.Name = "button7";
             button7.Size = new Size(182, 28);
             button7.TabIndex = 7;
-            button7.Text = "button7";
+            button7.Text = "An A Posteriori Existence";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -135,8 +145,9 @@
             button8.Name = "button8";
             button8.Size = new Size(182, 28);
             button8.TabIndex = 8;
-            button8.Text = "button8";
+            button8.Text = "S;G: Variant Space Octet";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -144,8 +155,9 @@
             button9.Name = "button9";
             button9.Size = new Size(182, 28);
             button9.TabIndex = 9;
-            button9.Text = "button9";
+            button9.Text = "S;G: My Darling's Embrace";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -153,8 +165,9 @@
             button10.Name = "button10";
             button10.Size = new Size(182, 28);
             button10.TabIndex = 10;
-            button10.Text = "button10";
+            button10.Text = "Babel of the Grieved Maze";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -162,7 +175,7 @@
             button11.Name = "button11";
             button11.Size = new Size(182, 28);
             button11.TabIndex = 11;
-            button11.Text = "button11";
+            button11.Text = "Arc Light of the Point at Infinity";
             button11.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -171,7 +184,7 @@
             button12.Name = "button12";
             button12.Size = new Size(182, 28);
             button12.TabIndex = 12;
-            button12.Text = "button12";
+            button12.Text = "Hyde of the Dark Dimension";
             button12.UseVisualStyleBackColor = true;
             // 
             // button13
@@ -180,7 +193,7 @@
             button13.Name = "button13";
             button13.Size = new Size(182, 28);
             button13.TabIndex = 13;
-            button13.Text = "button13";
+            button13.Text = "Rebellion of the Missing Ring";
             button13.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -189,16 +202,17 @@
             button14.Name = "button14";
             button14.Size = new Size(182, 28);
             button14.TabIndex = 14;
-            button14.Text = "button14";
+            button14.Text = "The Distant Valhalla";
             button14.UseVisualStyleBackColor = true;
             // 
             // button15
             // 
+            button15.Font = new Font("Segoe UI", 7F);
             button15.Location = new Point(606, 328);
             button15.Name = "button15";
             button15.Size = new Size(182, 28);
             button15.TabIndex = 15;
-            button15.Text = "button15";
+            button15.Text = "Braunian Motion of Love and Hate";
             button15.UseVisualStyleBackColor = true;
             // 
             // button16
@@ -207,7 +221,7 @@
             button16.Name = "button16";
             button16.Size = new Size(182, 28);
             button16.TabIndex = 16;
-            button16.Text = "button16";
+            button16.Text = "SG;×Sanrio Characters";
             button16.UseVisualStyleBackColor = true;
             // 
             // button17
@@ -216,7 +230,7 @@
             button17.Name = "button17";
             button17.Size = new Size(182, 28);
             button17.TabIndex = 17;
-            button17.Text = "button17";
+            button17.Text = "S;G: Time Long Ago";
             button17.UseVisualStyleBackColor = true;
             // 
             // button18
@@ -225,17 +239,38 @@
             button18.Name = "button18";
             button18.Size = new Size(182, 28);
             button18.TabIndex = 18;
-            button18.Text = "button18";
+            button18.Text = "S;G: Epigraph Short";
             button18.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
+            button19.Font = new Font("Segoe UI", 8F);
             button19.Location = new Point(606, 362);
             button19.Name = "button19";
             button19.Size = new Size(182, 28);
             button19.TabIndex = 19;
-            button19.Text = "button19";
+            button19.Text = "Okabe Rintaro Birthday Special";
             button19.UseVisualStyleBackColor = true;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { dramaCDFolderToolStripMenuItem, mangaToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(181, 70);
+            // 
+            // dramaCDFolderToolStripMenuItem
+            // 
+            dramaCDFolderToolStripMenuItem.Name = "dramaCDFolderToolStripMenuItem";
+            dramaCDFolderToolStripMenuItem.Size = new Size(180, 22);
+            dramaCDFolderToolStripMenuItem.Text = "Drama CD";
+            dramaCDFolderToolStripMenuItem.Click += dramaCDFolderToolStripMenuItem_Click;
+            // 
+            // mangaToolStripMenuItem
+            // 
+            mangaToolStripMenuItem.Name = "mangaToolStripMenuItem";
+            mangaToolStripMenuItem.Size = new Size(180, 22);
+            mangaToolStripMenuItem.Text = "Manga";
+            mangaToolStripMenuItem.Click += mangaToolStripMenuItem_Click;
             // 
             // FormSG
             // 
@@ -267,6 +302,7 @@
             Name = "FormSG";
             Text = "STEINS;GATE Launcher";
             Load += FormSG_Load;
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -292,5 +328,8 @@
         private Button button17;
         private Button button18;
         private Button button19;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem dramaCDFolderToolStripMenuItem;
+        private ToolStripMenuItem mangaToolStripMenuItem;
     }
 }

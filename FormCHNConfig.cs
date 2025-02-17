@@ -26,42 +26,52 @@ namespace SciADV_Launcher
             {
                 Globals.jsonCHNConfigRead = File.ReadAllText(Globals.CHNconfigFilePath);
                 var jsonCHNConfigData = JsonSerializer.Deserialize<CHNCompleteConfig>(Globals.jsonCHNConfigRead);
-                textBox1.Text = jsonCHNConfigData.CHNMainGamePath;
+                
                 Globals.CHNMainGameCheck = jsonCHNConfigData.CHNMainGamePath;
-                textBox2.Text = jsonCHNConfigData.CHNChaosGatePath;
+                
                 Globals.CHNChaosGateCheck = jsonCHNConfigData.CHNChaosGatePath;
-                //textBox3.Text = jsonConfigData.CHNLoveChuChuPath;
-                //CHNLoveChuChuCheck = jsonConfigData.CHNLoveChuChuPath;
-                //DELETE NEXT LINE WHEN RELEASED
-                textBox3.Text = "NOT AVAILABLE YET!";
-                textBox4.Text = jsonCHNConfigData.CHNChaosChatPath;
+                
+                Globals.CHNLoveChuChuCheck = jsonCHNConfigData.CHNLoveChuChuPath;
+                
                 Globals.CHNChaosChatCheck = jsonCHNConfigData.CHNChaosChatPath;
                 if (jsonCHNConfigData.CHNMainGamePath == null)
                 {
                     textBox1.Text = "Game Missing!";
                 }
+                else
+                {
+                    textBox1.Text = jsonCHNConfigData.CHNMainGamePath;
+                }
                 if (jsonCHNConfigData.CHNChaosGatePath == null)
                 {
                     textBox2.Text = "Novel Missing!";
                 }
-                /*
-                if (jsonConfigData.CHNLoveChuChuPath == null)
+                else
+                {
+                    textBox2.Text = jsonCHNConfigData.CHNChaosGatePath;
+                }
+                if (jsonCHNConfigData.CHNLoveChuChuPath == null)
                 {
                     textBox3.Text = "Game Missing!";
                 }
-                */
+                else
+                {
+                    textBox3.Text = jsonCHNConfigData.CHNLoveChuChuPath;
+                }
                 if (jsonCHNConfigData.CHNChaosChatPath == null)
                 {
                     textBox4.Text = "Novel Missing!";
+                }
+                else
+                {
+                    textBox4.Text = jsonCHNConfigData.CHNChaosChatPath;
                 }
             }
             else
             {
                 textBox1.Text = "Game Missing!";
                 textBox2.Text = "Novel Missing!";
-                //textBox3.Text = "Game Missing!";
-                //DELETE NEXT LINE WHEN RELEASED
-                textBox3.Text = "NOT AVAILABLE YET!";
+                textBox3.Text = "Game Missing!";
                 textBox4.Text = "Novel Missing!";
             }
         }
@@ -99,7 +109,7 @@ namespace SciADV_Launcher
             {
                 CHNMainGamePath = Globals.CHNMainGameCheck,
                 CHNChaosGatePath = Globals.CHNChaosGateCheck,
-                //CHNLoveChuChuPath = Globals.CHNLoveChuChuCheck,
+                CHNLoveChuChuPath = Globals.CHNLoveChuChuCheck,
                 CHNChaosChatPath = Globals.CHNChaosChatCheck
             };
             Globals.jsonCHNPaths = JsonSerializer.Serialize(CHNPaths);
@@ -122,7 +132,7 @@ namespace SciADV_Launcher
         {
             OpenFileDialog CHNChaosGate = new OpenFileDialog
             {
-                Filter = "CHAOSGATE.pdf|CHAOSGATE.pdf",
+                Filter = "PDF Files (*.pdf)|*.pdf",
                 FilterIndex = 1,
                 Multiselect = false
             };
@@ -135,26 +145,24 @@ namespace SciADV_Launcher
 
         private void button4_Click(object sender, EventArgs e)
         {
-            /*
             OpenFileDialog CHNLoveChuChu = new OpenFileDialog
             {
-                Filter = "Executable Files (*.exe)|*.exe",
+                Filter = "Vita3K (Vita3K.exe)|Vita3K.exe",
                 FilterIndex = 1,
                 Multiselect = false
             };
             if (CHNLoveChuChu.ShowDialog() == DialogResult.OK)
             {
                 textBox3.Text = CHNLoveChuChu.FileName;
-                CHNLoveChuChuCheck = CHNLoveChuChu.FileName;
+                Globals.CHNLoveChuChuCheck = CHNLoveChuChu.FileName;
             }
-            */
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             OpenFileDialog CHNChaosChat = new OpenFileDialog
             {
-                Filter = "CHAOSCHAT.pdf|CHAOSCHAT.pdf",
+                Filter = "PDF Files (*.pdf)|*.pdf",
                 FilterIndex = 1,
                 Multiselect = false
             };

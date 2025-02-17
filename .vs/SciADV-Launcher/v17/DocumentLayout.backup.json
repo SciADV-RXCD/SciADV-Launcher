@@ -7,64 +7,48 @@
       "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:sciadv-launcher.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\defineclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:defineclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formsgconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsgconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formdebug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formdebug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formchn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\defineclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:defineclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formsgconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsgconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formmainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formmainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formdebug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formdebug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formsgconfig.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsgconfig.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formmainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formmainconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formsg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\sciadv-launcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:sciadv-launcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\formchn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|c:\\users\\rubyxcoded\\source\\repos\\sciadv-launcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,12 +59,8 @@
       "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formsg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formchnconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D99D817-29AC-462F-9203-CF48F68D2857}|SciADV-Launcher.csproj|solutionrelative:formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,89 +70,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DefineClass.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\DefineClass.cs",
+              "RelativeDocumentMoniker": "DefineClass.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\DefineClass.cs",
+              "RelativeToolTip": "DefineClass.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwDAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T02:39:28.163Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormDebug.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormDebug.cs",
-              "RelativeDocumentMoniker": "FormDebug.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormDebug.cs",
-              "RelativeToolTip": "FormDebug.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwB8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T01:54:42.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormDebug.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormDebug.cs",
-              "RelativeDocumentMoniker": "FormDebug.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormDebug.cs [Design]",
-              "RelativeToolTip": "FormDebug.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T01:53:37.689Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SciADV-Launcher.csproj",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\SciADV-Launcher.csproj",
-              "RelativeDocumentMoniker": "SciADV-Launcher.csproj",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\SciADV-Launcher.csproj",
-              "RelativeToolTip": "SciADV-Launcher.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-12T01:47:16.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\Properties\\Resources.Designer.cs",
-              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\Properties\\Resources.Designer.cs",
-              "RelativeToolTip": "Properties\\Resources.Designer.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAADgv5IAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T01:44:41.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\Properties\\Resources.resx",
-              "RelativeToolTip": "Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-02-12T01:43:28.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormMainConfig.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormMainConfig.cs",
-              "RelativeDocumentMoniker": "FormMainConfig.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormMainConfig.cs",
-              "RelativeToolTip": "FormMainConfig.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAEwHcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T04:51:09.815Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -183,85 +98,44 @@
               "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\SciADV-Launcher.csproj",
               "RelativeToolTip": "SciADV-Launcher.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-11T02:32:51.943Z",
+              "WhenOpened": "2025-02-16T01:39:51.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DefineClass.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\DefineClass.cs",
-              "RelativeDocumentMoniker": "DefineClass.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\DefineClass.cs",
-              "RelativeToolTip": "DefineClass.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAhwCcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "FormSG.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.Designer.cs",
+              "RelativeDocumentMoniker": "FormSG.Designer.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.Designer.cs",
+              "RelativeToolTip": "FormSG.Designer.cs",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAwBEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T02:17:27.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T00:38:03.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
+              "Title": "FormSGConfig.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.Designer.cs",
+              "RelativeDocumentMoniker": "FormSGConfig.Designer.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.Designer.cs",
+              "RelativeToolTip": "FormSGConfig.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T00:29:38.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T01:08:43.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormSGConfig.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.cs",
-              "RelativeDocumentMoniker": "FormSGConfig.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.cs",
-              "RelativeToolTip": "FormSGConfig.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:20:40.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormCHNConfig.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs",
-              "RelativeDocumentMoniker": "FormCHNConfig.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs",
-              "RelativeToolTip": "FormCHNConfig.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAwGUAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:20:15.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormSG.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.cs",
-              "RelativeDocumentMoniker": "FormSG.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.cs",
-              "RelativeToolTip": "FormSG.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAhwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:16:07.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormCHN.cs",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs",
-              "RelativeDocumentMoniker": "FormCHN.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs",
-              "RelativeToolTip": "FormCHN.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAmwHEAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:16:33.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T04:28:08.381Z"
             },
             {
               "$type": "Document",
@@ -271,59 +145,51 @@
               "RelativeDocumentMoniker": "FormMain.cs",
               "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormMain.cs",
               "RelativeToolTip": "FormMain.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAuwGwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:15:30.247Z",
+              "WhenOpened": "2025-02-13T04:26:29.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormMainConfig.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormMainConfig.cs",
-              "RelativeDocumentMoniker": "FormMainConfig.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormMainConfig.cs [Design]",
-              "RelativeToolTip": "FormMainConfig.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "FormSGConfig.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.cs",
+              "RelativeDocumentMoniker": "FormSGConfig.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.cs",
+              "RelativeToolTip": "FormSGConfig.cs",
+              "ViewState": "AgIAAFQBAAAAAAAAAAA6wH4BAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T04:46:33.99Z"
+              "WhenOpened": "2025-02-13T02:49:36.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "FormSGConfig.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.cs",
               "RelativeDocumentMoniker": "FormSGConfig.cs",
               "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSGConfig.cs [Design]",
               "RelativeToolTip": "FormSGConfig.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:14:44.1Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-10T22:14:44.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FormCHNConfig.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs",
-              "RelativeDocumentMoniker": "FormCHNConfig.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs [Design]",
-              "RelativeToolTip": "FormCHNConfig.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "FormSG.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.cs",
+              "RelativeDocumentMoniker": "FormSG.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.cs",
+              "RelativeToolTip": "FormSG.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAANQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T01:42:35.15Z"
+              "WhenOpened": "2025-02-10T22:16:07.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormCHN.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs",
-              "RelativeDocumentMoniker": "FormCHN.cs",
-              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs [Design]",
-              "RelativeToolTip": "FormCHN.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:10:23.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
               "Title": "FormSG.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormSG.cs",
               "RelativeDocumentMoniker": "FormSG.cs",
@@ -334,7 +200,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormCHNConfig.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs",
+              "RelativeDocumentMoniker": "FormCHNConfig.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs",
+              "RelativeToolTip": "FormCHNConfig.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAwJMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T02:57:45.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "FormCHNConfig.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs",
+              "RelativeDocumentMoniker": "FormCHNConfig.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHNConfig.cs [Design]",
+              "RelativeToolTip": "FormCHNConfig.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T01:42:35.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormCHN.cs",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs",
+              "RelativeDocumentMoniker": "FormCHN.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs",
+              "RelativeToolTip": "FormCHN.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwHwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T02:57:51.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormCHN.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs",
+              "RelativeDocumentMoniker": "FormCHN.cs",
+              "ToolTip": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormCHN.cs [Design]",
+              "RelativeToolTip": "FormCHN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T22:10:23.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "FormMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rubyxcoded\\source\\repos\\SciADV-Launcher\\FormMain.cs",
               "RelativeDocumentMoniker": "FormMain.cs",

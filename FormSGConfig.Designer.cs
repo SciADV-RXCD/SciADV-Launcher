@@ -82,6 +82,8 @@
             button16 = new Button();
             button17 = new Button();
             button18 = new Button();
+            button20 = new Button();
+            textBox18 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -203,10 +205,11 @@
             button5.TabIndex = 18;
             button5.Text = "...";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(722, 96);
+            textBox5.Location = new Point(770, 96);
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(178, 23);
@@ -214,7 +217,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(906, 96);
+            button6.Location = new Point(954, 95);
             button6.Name = "button6";
             button6.Size = new Size(37, 23);
             button6.TabIndex = 20;
@@ -235,7 +238,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label6.Location = new Point(722, 68);
+            label6.Location = new Point(770, 68);
             label6.Name = "label6";
             label6.Size = new Size(200, 21);
             label6.TabIndex = 22;
@@ -306,25 +309,27 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label9.Location = new Point(486, 129);
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label9.Location = new Point(487, 124);
             label9.Name = "label9";
-            label9.Size = new Size(210, 21);
+            label9.Size = new Size(156, 30);
             label9.TabIndex = 30;
-            label9.Text = "Babel of the Grieved Maze";
+            label9.Text = "Babel of the Grieved Maze\r\n(*.mp4/*.mkv or *.pdf)";
             // 
             // button9
             // 
+            button9.Font = new Font("Segoe UI", 9F);
             button9.Location = new Point(670, 154);
             button9.Name = "button9";
-            button9.Size = new Size(37, 23);
+            button9.Size = new Size(94, 23);
             button9.TabIndex = 31;
-            button9.Text = "...";
+            button9.Text = "Drama CD";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(722, 155);
+            textBox9.Location = new Point(770, 155);
             textBox9.Name = "textBox9";
             textBox9.ReadOnly = true;
             textBox9.Size = new Size(178, 23);
@@ -334,7 +339,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label10.Location = new Point(722, 129);
+            label10.Location = new Point(770, 129);
             label10.Name = "label10";
             label10.Size = new Size(218, 19);
             label10.TabIndex = 33;
@@ -342,7 +347,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(906, 155);
+            button10.Location = new Point(954, 155);
             button10.Name = "button10";
             button10.Size = new Size(37, 23);
             button10.TabIndex = 34;
@@ -353,7 +358,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            label11.Location = new Point(12, 188);
+            label11.Location = new Point(12, 276);
             label11.Name = "label11";
             label11.Size = new Size(207, 20);
             label11.TabIndex = 35;
@@ -361,7 +366,7 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(12, 212);
+            textBox10.Location = new Point(12, 299);
             textBox10.Name = "textBox10";
             textBox10.ReadOnly = true;
             textBox10.Size = new Size(178, 23);
@@ -369,7 +374,7 @@
             // 
             // button11
             // 
-            button11.Location = new Point(196, 212);
+            button11.Location = new Point(196, 299);
             button11.Name = "button11";
             button11.Size = new Size(37, 23);
             button11.TabIndex = 37;
@@ -378,7 +383,7 @@
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(249, 212);
+            textBox11.Location = new Point(249, 299);
             textBox11.Name = "textBox11";
             textBox11.ReadOnly = true;
             textBox11.Size = new Size(178, 23);
@@ -386,7 +391,7 @@
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(486, 212);
+            textBox12.Location = new Point(486, 299);
             textBox12.Name = "textBox12";
             textBox12.ReadOnly = true;
             textBox12.Size = new Size(178, 23);
@@ -394,7 +399,7 @@
             // 
             // textBox13
             // 
-            textBox13.Location = new Point(722, 212);
+            textBox13.Location = new Point(770, 298);
             textBox13.Name = "textBox13";
             textBox13.ReadOnly = true;
             textBox13.Size = new Size(178, 23);
@@ -402,7 +407,7 @@
             // 
             // button12
             // 
-            button12.Location = new Point(433, 214);
+            button12.Location = new Point(433, 299);
             button12.Name = "button12";
             button12.Size = new Size(37, 23);
             button12.TabIndex = 41;
@@ -411,7 +416,7 @@
             // 
             // button13
             // 
-            button13.Location = new Point(670, 214);
+            button13.Location = new Point(670, 298);
             button13.Name = "button13";
             button13.Size = new Size(37, 23);
             button13.TabIndex = 42;
@@ -420,7 +425,7 @@
             // 
             // button14
             // 
-            button14.Location = new Point(906, 212);
+            button14.Location = new Point(954, 297);
             button14.Name = "button14";
             button14.Size = new Size(37, 23);
             button14.TabIndex = 43;
@@ -431,7 +436,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            label12.Location = new Point(249, 188);
+            label12.Location = new Point(249, 276);
             label12.Name = "label12";
             label12.Size = new Size(214, 20);
             label12.TabIndex = 44;
@@ -441,7 +446,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label13.Location = new Point(486, 194);
+            label13.Location = new Point(486, 275);
             label13.Name = "label13";
             label13.Size = new Size(163, 21);
             label13.TabIndex = 45;
@@ -451,7 +456,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label14.Location = new Point(722, 194);
+            label14.Location = new Point(770, 279);
             label14.Name = "label14";
             label14.Size = new Size(197, 15);
             label14.TabIndex = 46;
@@ -459,7 +464,7 @@
             // 
             // textBox14
             // 
-            textBox14.Location = new Point(12, 284);
+            textBox14.Location = new Point(12, 368);
             textBox14.Name = "textBox14";
             textBox14.ReadOnly = true;
             textBox14.Size = new Size(178, 23);
@@ -467,7 +472,7 @@
             // 
             // textBox15
             // 
-            textBox15.Location = new Point(249, 284);
+            textBox15.Location = new Point(249, 367);
             textBox15.Name = "textBox15";
             textBox15.ReadOnly = true;
             textBox15.Size = new Size(178, 23);
@@ -475,7 +480,7 @@
             // 
             // textBox16
             // 
-            textBox16.Location = new Point(486, 284);
+            textBox16.Location = new Point(486, 366);
             textBox16.Name = "textBox16";
             textBox16.ReadOnly = true;
             textBox16.Size = new Size(178, 23);
@@ -483,7 +488,7 @@
             // 
             // textBox17
             // 
-            textBox17.Location = new Point(722, 284);
+            textBox17.Location = new Point(770, 366);
             textBox17.Name = "textBox17";
             textBox17.ReadOnly = true;
             textBox17.Size = new Size(178, 23);
@@ -493,7 +498,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label15.Location = new Point(12, 249);
+            label15.Location = new Point(12, 334);
             label15.Name = "label15";
             label15.Size = new Size(215, 30);
             label15.TabIndex = 51;
@@ -503,7 +508,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label16.Location = new Point(249, 255);
+            label16.Location = new Point(249, 343);
             label16.Name = "label16";
             label16.Size = new Size(157, 21);
             label16.TabIndex = 52;
@@ -513,7 +518,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label17.Location = new Point(486, 255);
+            label17.Location = new Point(486, 342);
             label17.Name = "label17";
             label17.Size = new Size(156, 21);
             label17.TabIndex = 53;
@@ -523,7 +528,7 @@
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label18.Location = new Point(722, 245);
+            label18.Location = new Point(770, 325);
             label18.Name = "label18";
             label18.Size = new Size(136, 38);
             label18.TabIndex = 54;
@@ -531,7 +536,7 @@
             // 
             // button15
             // 
-            button15.Location = new Point(196, 283);
+            button15.Location = new Point(196, 367);
             button15.Name = "button15";
             button15.Size = new Size(37, 23);
             button15.TabIndex = 55;
@@ -540,7 +545,7 @@
             // 
             // button16
             // 
-            button16.Location = new Point(433, 283);
+            button16.Location = new Point(433, 366);
             button16.Name = "button16";
             button16.Size = new Size(37, 23);
             button16.TabIndex = 56;
@@ -549,7 +554,7 @@
             // 
             // button17
             // 
-            button17.Location = new Point(670, 283);
+            button17.Location = new Point(670, 368);
             button17.Name = "button17";
             button17.Size = new Size(37, 23);
             button17.TabIndex = 57;
@@ -558,18 +563,38 @@
             // 
             // button18
             // 
-            button18.Location = new Point(906, 284);
+            button18.Location = new Point(954, 368);
             button18.Name = "button18";
             button18.Size = new Size(37, 23);
             button18.TabIndex = 58;
             button18.Text = "...";
             button18.UseVisualStyleBackColor = true;
             // 
+            // button20
+            // 
+            button20.Location = new Point(670, 184);
+            button20.Name = "button20";
+            button20.Size = new Size(94, 23);
+            button20.TabIndex = 60;
+            button20.Text = "Manga";
+            button20.UseVisualStyleBackColor = true;
+            button20.Click += button20_Click;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(486, 184);
+            textBox18.Name = "textBox18";
+            textBox18.ReadOnly = true;
+            textBox18.Size = new Size(178, 23);
+            textBox18.TabIndex = 62;
+            // 
             // FormSGConfig
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(954, 450);
+            ClientSize = new Size(1003, 450);
+            Controls.Add(textBox18);
+            Controls.Add(button20);
             Controls.Add(button18);
             Controls.Add(button17);
             Controls.Add(button16);
@@ -687,5 +712,7 @@
         private Button button16;
         private Button button17;
         private Button button18;
+        private Button button20;
+        private TextBox textBox18;
     }
 }
