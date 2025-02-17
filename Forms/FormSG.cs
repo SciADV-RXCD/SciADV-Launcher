@@ -147,7 +147,29 @@ namespace SciADV_Launcher
 
         private void button7_Click(object sender, EventArgs e)
         {
+            if (File.Exists($"{Globals.VideoPlayerPath}\\main.m3u"))
+            {
+                File.Delete($"{Globals.VideoPlayerPath}\\main.m3u");
+                File.Copy($"{Globals.SGPosterioriExistenceCheck}\\main.m3u", $"{Globals.VideoPlayerPath}\\main.m3u");
+                Console.WriteLine(Globals.ConsoleOutputPrefix + "Rewrote Video Config File!");
+            }
+            else
+            {
+                File.Copy($"{Globals.SGPosterioriExistenceCheck}\\main.m3u", $"{Globals.VideoPlayerPath}\\main.m3u");
+                Console.WriteLine(Globals.ConsoleOutputPrefix + "Wrote Video Config File!");
+            }
 
+            Process PosterioriExistenceDramaCD = new Process()
+            {
+                StartInfo =
+                {
+                    FileName = Globals.VideoPlayerTool,
+                    Arguments = $"{Globals.VideoPlayerPath}\\main.m3u"
+                }
+            };
+            PosterioriExistenceDramaCD.Start();
+            Console.WriteLine(Globals.ConsoleOutputPrefix + "A Posteriori Existence Drama CD Launched!");
+            ActiveForm.WindowState = FormWindowState.Minimized;
         }
 
         private void button8_Click(object sender, EventArgs e)

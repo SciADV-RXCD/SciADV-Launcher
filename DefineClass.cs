@@ -48,6 +48,7 @@ namespace SciADV_Launcher
             public static string jsonSGPaths { get; set; }
             public static string[] allBabelGrievedMazeDramaCDFiles { get; set; }
             public static string[] allBabelGrievedMazeMangaFiles { get; set; }
+            public static string[] allPosterioriExistenceDramaCDFiles { get; set; }
             // SG Content Checks
             public static string SGMainGameCheck { get; set; }
             public static string SGHolyDayCalamitousBirthCheck { get; set; }

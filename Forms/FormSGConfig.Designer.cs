@@ -223,6 +223,7 @@
             button6.TabIndex = 20;
             button6.Text = "...";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // label5
             // 

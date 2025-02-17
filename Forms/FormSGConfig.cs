@@ -30,7 +30,7 @@ namespace SciADV_Launcher
                 Globals.SGHolyDayCalamitousBirthCheck = jsonSGConfigData.SGHolyDayCalamitousBirthPath;
                 Globals.SGEgoisticPoriomaniaCheck = jsonSGConfigData.SGEgoisticPoriomaniaPath;
                 Globals.SGLoadRegionDejaVuCheck = jsonSGConfigData.SGLoadRegionDejaVuPath;
-                Globals.SGLoadRegionDejaVuCheck = jsonSGConfigData.SGPosterioriExistencePath;
+                Globals.SGPosterioriExistenceCheck = jsonSGConfigData.SGPosterioriExistencePath;
                 Globals.SGVariantSpaceOctetCheck = jsonSGConfigData.SGVariantSpaceOctetPath;
                 Globals.SGDarlingsEmbraceCheck = jsonSGConfigData.SGDarlingsEmbracePath;
                 Globals.SGBabelGrievedMazeDramaCDCheck = jsonSGConfigData.SGBabelGrievedMazeDramaCDPath;
@@ -337,6 +337,32 @@ namespace SciADV_Launcher
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog PosterioriExistenceDramaCD = new OpenFileDialog
+            {
+                Filter = "MP4 / MKV Files (*.mkv or *.mp4)|*.mkv;*.mp4",
+                FilterIndex = 1,
+                Multiselect = true
+            };
+            if (PosterioriExistenceDramaCD.ShowDialog() == DialogResult.OK)
+            {
+
+                Globals.allPosterioriExistenceDramaCDFiles = PosterioriExistenceDramaCD.FileNames;
+                Globals.SGPosterioriExistenceCheck = Path.GetDirectoryName(Globals.allPosterioriExistenceDramaCDFiles[0]);
+                if (File.Exists($"{Globals.SGPosterioriExistenceCheck}\\main.m3u"))
+                {
+                    File.Delete($"{Globals.SGPosterioriExistenceCheck}\\main.m3u");
+                    File.WriteAllLines($"{Globals.SGPosterioriExistenceCheck}\\main.m3u", Globals.allPosterioriExistenceDramaCDFiles);
+                }
+                else
+                {
+                    File.WriteAllLines($"{Globals.SGPosterioriExistenceCheck}\\main.m3u", Globals.allPosterioriExistenceDramaCDFiles);
+                }
+                textBox5.Text = Globals.SGPosterioriExistenceCheck;
+            }
+        }
+
         // Babel Drama CD Folder
         private void button9_Click(object sender, EventArgs e)
         {
@@ -355,8 +381,7 @@ namespace SciADV_Launcher
             };
             if (BabelGrievedMazeDramaCDFiles.ShowDialog() == DialogResult.OK)
             {
-                //textBox8.Text = SGLoadRegionDejaVu.FileName;
-                //Globals.SGLoadRegionDejaVuCheck = SGLoadRegionDejaVu.FileName;
+                
                 Globals.allBabelGrievedMazeDramaCDFiles = BabelGrievedMazeDramaCDFiles.FileNames;
                 Globals.SGBabelGrievedMazeDramaCDCheck = Path.GetDirectoryName(Globals.allBabelGrievedMazeDramaCDFiles[0]);
                 if (File.Exists($"{Globals.SGBabelGrievedMazeDramaCDCheck}\\main.m3u"))
@@ -368,15 +393,15 @@ namespace SciADV_Launcher
                 {
                     File.WriteAllLines($"{Globals.SGBabelGrievedMazeDramaCDCheck}\\main.m3u", Globals.allBabelGrievedMazeDramaCDFiles);
                 }
-
-
-                //Console Output
-                //Get Directory of the Files
-                //Path.GetDirectoryName(Globals.allBabelGrievedMazeFiles[0]);
-                //Console.WriteLine(Path.GetDirectoryName(Globals.allBabelGrievedMazeFiles[0]));
-                //Globals.allBabelGrievedMazeFiles.ToList().ForEach(Console.WriteLine);
                 textBox8.Text = Globals.SGBabelGrievedMazeDramaCDCheck;
             }
+            //textBox8.Text = SGLoadRegionDejaVu.FileName;
+            //Globals.SGLoadRegionDejaVuCheck = SGLoadRegionDejaVu.FileName;
+            //Console Output
+            //Get Directory of the Files
+            //Path.GetDirectoryName(Globals.allBabelGrievedMazeFiles[0]);
+            //Console.WriteLine(Path.GetDirectoryName(Globals.allBabelGrievedMazeFiles[0]));
+            //Globals.allBabelGrievedMazeFiles.ToList().ForEach(Console.WriteLine);
         }
 
         private void button20_Click(object sender, EventArgs e)
