@@ -49,12 +49,16 @@ namespace SciADV_Launcher
             public static string[] allBabelGrievedMazeDramaCDFiles { get; set; }
             public static string[] allBabelGrievedMazeMangaFiles { get; set; }
             public static string[] allPosterioriExistenceDramaCDFiles { get; set; }
+            public static string[] allArcLightInfinityDramaCDFiles { get; set; }
+            public static string[] allSymphoniaHiddenAmbiguityDramaCDFiles { get; set; }
+            public static string[] allHydeDarkDimensionDramaCDFiles { get; set; }
             // SG Content Checks
             public static string SGMainGameCheck { get; set; }
             public static string SGHolyDayCalamitousBirthCheck { get; set; }
             public static string SGEgoisticPoriomaniaCheck { get; set; }
             public static string SGLoadRegionDejaVuCheck { get; set; }
             public static string SGPosterioriExistenceCheck { get; set; }
+            public static string SGSymphoniaHiddenAmbiguityCheck { get; set; }
             public static string SGVariantSpaceOctetCheck { get; set; }
             public static string SGDarlingsEmbraceCheck { get; set; }
             public static string SGBabelGrievedMazeDramaCDCheck { get; set; }
